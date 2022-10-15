@@ -90,8 +90,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             let nextVC = UIStoryboard(name: "Main", bundle: nil)
                 .instantiateViewController(withIdentifier: "theShowImage")
             as! ShowImageViewController
-            
 
+            nextVC.callBack = {
+                let alert = UIAlertController(title: nil, message: "謝謝你的參選", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "知道了", style: .default))
+                self.present(alert, animated: true)
+            }
+            
+            
             self.present(nextVC, animated: true){
                 nextVC.theImageView.image = self.theImages[indexPath.row]
             }

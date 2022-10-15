@@ -11,11 +11,19 @@ class ShowImageViewController: UIViewController {
 
     
     @IBOutlet weak var theImageView: UIImageView!
+    
+    var callBack:(()->())?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        callBack?()
+    }
 
 
 }
