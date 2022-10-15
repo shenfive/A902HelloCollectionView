@@ -79,9 +79,28 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
-        let alert = UIAlertController(title: "hello", message: "\(indexPath)", preferredStyle: .alert)
+        let alert = UIAlertController(title: "提示", message: "放大嗎？", preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "取消", style: .default)
         alert.addAction(cancelAction)
+        
+        let okAction = UIAlertAction(title: "確定", style: .default){(_) in
+            print("有按到 OK")
+            
+          
+            let nextVC = UIStoryboard(name: "Main", bundle: nil)
+                .instantiateViewController(withIdentifier: "theShowImage")
+            as! ShowImageViewController
+            
+
+            self.present(nextVC, animated: true){
+                nextVC.theImageView.image = self.theImages[indexPath.row]
+            }
+            
+        }
+        alert.addAction(okAction)
+   
+        
+        
         self.present(alert, animated: true)
         
         

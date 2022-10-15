@@ -14,6 +14,7 @@
 		BAA952DE28FA498A00E64D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA952DD28FA498A00E64D33 /* Assets.xcassets */; };
 		BAA952E128FA498A00E64D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA952DF28FA498A00E64D33 /* LaunchScreen.storyboard */; };
 		BAA952E928FA4D9400E64D33 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA952E828FA4D9400E64D33 /* MyCollectionViewCell.swift */; };
+		BAA952EB28FA668200E64D33 /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA952EA28FA668200E64D33 /* ShowImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BAA952E028FA498A00E64D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA952E228FA498A00E64D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA952E828FA4D9400E64D33 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		BAA952EA28FA668200E64D33 /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BAA952DF28FA498A00E64D33 /* LaunchScreen.storyboard */,
 				BAA952E228FA498A00E64D33 /* Info.plist */,
 				BAA952E828FA4D9400E64D33 /* MyCollectionViewCell.swift */,
+				BAA952EA28FA668200E64D33 /* ShowImageViewController.swift */,
 			);
 			path = A902HelloCollectionView;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				BAA952D528FA498900E64D33 /* AppDelegate.swift in Sources */,
 				BAA952E928FA4D9400E64D33 /* MyCollectionViewCell.swift in Sources */,
 				BAA952D728FA498900E64D33 /* SceneDelegate.swift in Sources */,
+				BAA952EB28FA668200E64D33 /* ShowImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
