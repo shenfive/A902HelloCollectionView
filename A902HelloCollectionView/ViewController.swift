@@ -7,10 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDataSource {
+
 
     
     var theImages:[UIImage?] = []
+    @IBOutlet weak var theCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +23,26 @@ class ViewController: UIViewController {
                      UIImage(named: "image4"),
                      UIImage(named: "image5"),
                      UIImage(named: "image6")]
-        print(theImages)
-        print()
+        theCollectionView.dataSource = self
+        
+        
+        
     }
 
-
+//MARK:collectionview DataSource
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return theImages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "abcdefg", for: indexPath) as! MyCollectionViewCell
+        cell.theImageView.image = theImages[indexPath.row]
+        
+        return cell
+        
+    }
+    
+    
+    
 }
 
