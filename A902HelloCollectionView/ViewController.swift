@@ -26,6 +26,16 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         theCollectionView.dataSource = self
         
         
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        layout.minimumLineSpacing = 5
+
+        let screecsize = UIScreen.main.bounds.size
+        layout.itemSize = CGSize(width: screecsize.width / 3 - 10,
+                                 height: screecsize.width / 3 - 10)
+        theCollectionView.setCollectionViewLayout(layout, animated: false)
+        
+        
         
     }
 
