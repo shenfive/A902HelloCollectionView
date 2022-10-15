@@ -15,6 +15,7 @@
 		BAA952E128FA498A00E64D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA952DF28FA498A00E64D33 /* LaunchScreen.storyboard */; };
 		BAA952E928FA4D9400E64D33 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA952E828FA4D9400E64D33 /* MyCollectionViewCell.swift */; };
 		BAA952EB28FA668200E64D33 /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA952EA28FA668200E64D33 /* ShowImageViewController.swift */; };
+		BAA952ED28FA7E4700E64D33 /* 第六周 網路程式  Part 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BAA952EC28FA7E4700E64D33 /* 第六周 網路程式  Part 1.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BAA952E228FA498A00E64D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA952E828FA4D9400E64D33 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		BAA952EA28FA668200E64D33 /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
+		BAA952EC28FA7E4700E64D33 /* 第六周 網路程式  Part 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "第六周 網路程式  Part 1.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BAA952D428FA498900E64D33 /* AppDelegate.swift */,
 				BAA952D628FA498900E64D33 /* SceneDelegate.swift */,
 				BAA952D828FA498900E64D33 /* ViewController.swift */,
+				BAA952EC28FA7E4700E64D33 /* 第六周 網路程式  Part 1.pdf */,
 				BAA952DA28FA498900E64D33 /* Main.storyboard */,
 				BAA952DD28FA498A00E64D33 /* Assets.xcassets */,
 				BAA952DF28FA498A00E64D33 /* LaunchScreen.storyboard */,
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA952ED28FA7E4700E64D33 /* 第六周 網路程式  Part 1.pdf in Resources */,
 				BAA952E128FA498A00E64D33 /* LaunchScreen.storyboard in Resources */,
 				BAA952DE28FA498A00E64D33 /* Assets.xcassets in Resources */,
 				BAA952DC28FA498900E64D33 /* Main.storyboard in Resources */,

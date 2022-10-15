@@ -84,9 +84,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         alert.addAction(cancelAction)
         
         let okAction = UIAlertAction(title: "確定", style: .default){(_) in
-            print("有按到 OK")
-            
-          
+
             let nextVC = UIStoryboard(name: "Main", bundle: nil)
                 .instantiateViewController(withIdentifier: "theShowImage")
             as! ShowImageViewController
@@ -96,8 +94,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 alert.addAction(UIAlertAction(title: "知道了", style: .default))
                 self.present(alert, animated: true)
             }
-            
-            
+    
             self.present(nextVC, animated: true){
                 nextVC.theImageView.image = self.theImages[indexPath.row]
             }
