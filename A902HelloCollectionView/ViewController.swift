@@ -25,19 +25,43 @@ class ViewController: UIViewController, UICollectionViewDataSource {
                      UIImage(named: "image6")]
         theCollectionView.dataSource = self
         
-        
-        let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-        layout.minimumLineSpacing = 5
+        setItemInLine(number: 3)
 
-        let screecsize = UIScreen.main.bounds.size
-        layout.itemSize = CGSize(width: screecsize.width / 3 - 10,
-                                 height: screecsize.width / 3 - 10)
-        theCollectionView.setCollectionViewLayout(layout, animated: false)
         
         
         
     }
+    
+    @IBAction func changNumberInLine(_ sender: UISegmentedControl) {
+        let value = sender.selectedSegmentIndex
+        
+        switch value{
+        case 0:
+            setItemInLine(number: 3)
+        case 1:
+            setItemInLine(number: 4)
+        case 2:
+            setItemInLine(number: 5)
+        default:
+            break
+        }
+        
+    }
+    
+    
+    func setItemInLine(number:Int){
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        layout.minimumLineSpacing = 10
+
+        let screecsize = UIScreen.main.bounds.size
+        layout.itemSize = CGSize(width: screecsize.width / CGFloat(number) - 10,
+                                 height: screecsize.width / CGFloat(number) - 10)
+        theCollectionView.setCollectionViewLayout(layout, animated: true)
+    }
+    
+    
+    
 
 //MARK:collectionview DataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
