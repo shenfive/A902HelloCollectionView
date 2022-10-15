@@ -79,6 +79,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
+        let alert = UIAlertController(title: "hello", message: "\(indexPath)", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "取消", style: .default)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true)
+        
+        
     }
     
     
