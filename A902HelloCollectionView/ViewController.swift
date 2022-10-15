@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
 
     
@@ -24,6 +24,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
                      UIImage(named: "image5"),
                      UIImage(named: "image6")]
         theCollectionView.dataSource = self
+        theCollectionView.delegate = self
         
         setItemInLine(number: 3)
 
@@ -74,6 +75,10 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         
         return cell
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
     }
     
     
